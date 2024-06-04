@@ -3,7 +3,6 @@
 .Rapp.history
 
 # Session Data files
-.RData
 .RDataTmp
 
 # User-specific files
@@ -47,3 +46,11 @@ po/*~
 
 # RStudio Connect folder
 rsconnect/
+
+# Exclude solution folders
+solution/
+solution.R
+submissions/
+*.zip
+*.csv
+rgradeblackboardgrader_processall.R
