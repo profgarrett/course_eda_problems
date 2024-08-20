@@ -51,6 +51,9 @@ rsconnect/
 solution/
 solution.R
 submissions/
+submissions
 *.zip
 *.csv
 rgradeblackboardgrader_processall.R
+*_solution.R
+*_solution.Rmd
