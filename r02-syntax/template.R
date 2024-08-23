@@ -12,7 +12,22 @@
 library(testthat)
 
 
-# Basic Variables  ------------------
+# R Syntax  ------------------
+#
+
+# Core
+#   Comments start with #
+#   Equality, try seeing if 1 is equal to 1, using 1-3 equal signs
+#   Assignment, use <- and try =
+
+
+# Arithmetic
+#   Calculate ROI for an investment of $10,000 and growth of $5,000.
+#   Calculate NPV for the investment, assuming a 3.5% discount rate and 2 years.
+#       https://www.investopedia.com/terms/n/npv.asp
+
+
+# Variables
 #
 #
 # Variable names must:
@@ -31,23 +46,32 @@ library(testthat)
 #   Logical: TRUE or FALSE
 #
 # Use <- to store (alt-) a value in a variable (not equal!)
+
+# Numbers
 x1
 x2
+# Text
 x3    # always use double quotes
+
+# Boolean
 x4
 
 
-# Problem
+# Make the tests pass!
+test_that('variables_problem', {
+  testthat::expect_identical(x1, 1.1)
+  testthat::expect_identical(x2, 1)
+  testthat::expect_identical(x3, "text")
+  testthat::expect_identical(x4, T)
+})
+
+
+# Application Problem
 #   Create variables with your age, major, car, number of units this term,
 #   and years of experience in accounting.
 
 
 
-test_that('variables_problem', {
-  testthat::expect_identical(x1, 1.1)
-  testthat::expect_identical(x2, 1)
-  testthat::expect_identical(x3, "text")
-})
 
 # Complex variables  --------------------------
 #
