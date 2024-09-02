@@ -22,7 +22,7 @@ library(testthat)
 
 
 # Arithmetic
-#   Calculate ROI for an investment of $10,000 and growth of $5,000.
+#   Calculate ROI for an investment of $10,000 with an ending return of $15,000.
 #   Calculate NPV for the investment, assuming a 3.5% discount rate and 2 years.
 #       https://www.investopedia.com/terms/n/npv.asp
 

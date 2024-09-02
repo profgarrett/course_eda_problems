@@ -66,6 +66,8 @@ q09_answer
 
 # Q10
 # Combine the two vectors with append
+q10a <- c(1, 2, 3)
+q10b <- c(4, 5, 6)
 q10_answer
 
 
@@ -75,14 +77,14 @@ q10_answer
 # Do not edit of the lines below, as my grading script expects them exactly as shown.
 #
 if (F) {
-  testthat::expect_identical(q01_answer, q01_solution)
-  testthat::expect_identical(q02_answer, q02_solution)
-  testthat::expect_identical(q03_answer, q03_solution)
-  testthat::expect_identical(q04_answer, q04_solution)
-  testthat::expect_identical(q05_answer, q05_solution)
-  testthat::expect_identical(q06_answer, q06_solution)
-  testthat::expect_identical(q07_answer, q07_solution)
-  testthat::expect_identical(q08_answer, q08_solution)
-  testthat::expect_identical(q09_answer, q09_solution)
-  testthat::expect_identical(q10_answer, q10_solution)
+  testthat::expect_equal(q01_answer, q01_solution)
+  testthat::expect_equal(q02_answer, q02_solution)
+  testthat::expect_equal(q03_answer, q03_solution)
+  testthat::expect_equal(q04_answer, q04_solution)
+  testthat::expect_equal(q05_answer, q05_solution)
+  testthat::expect_equal(q06_answer, q06_solution)
+  testthat::expect_equal(q07_answer, q07_solution)
+  testthat::expect_equal(q08_answer, q08_solution)
+  testthat::expect_equal(q09_answer, q09_solution)
+  testthat::expect_equal(q10_answer, q10_solution)
 }
