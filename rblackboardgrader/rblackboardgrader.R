@@ -10,7 +10,7 @@
 library(testthat)
 library(dplyr)
 library(stringr)
-
+library(stringi)
 
 
 #################################################################################
@@ -233,6 +233,7 @@ calcGrades <- function(submission_dir, your_test_file, suppress_warnings = T, ve
 #}
 
 grade_first_blackboard_zip_file_in_wd_and_save_results <- function(test_file_path) {
+  # test_file_path <- 'r33-syntax-functions2/test.R'
 
   # make sure that we have a filepath
   if (missing(test_file_path)) {
@@ -245,9 +246,15 @@ grade_first_blackboard_zip_file_in_wd_and_save_results <- function(test_file_pat
     stop('Could not find a zip in the working directory')
   }
   if (file.exists('./submissions')) {
-    unlink('./submissions', recursive = TRUE)
+    #
+    # Do not wipe out existing submission
+    # unlink('./submissions', recursive = TRUE)
+    print('Already found submissions folder, using those files')
+  } else {
+    print('Unzipping into submissions folder')
+    unzip(files[1], exdir = 'submissions', overwrite = TRUE)
+
   }
-  unzip(files[1], exdir = 'submissions', overwrite = TRUE)
 
 
   # Get list of files to grade
@@ -275,7 +282,6 @@ grade_first_blackboard_zip_file_in_wd_and_save_results <- function(test_file_pat
                        your_test_file = test_file_path)
 
 
-
   # Convert tibble of numerical values into a vector of summarized text
   # Example: summary <- select(results, -id)
   toText <- function(t_i_values) {
@@ -301,8 +307,12 @@ grade_first_blackboard_zip_file_in_wd_and_save_results <- function(test_file_pat
 
   # Create a cleaned up version of the results
   # Has a standardized layout useful for dealing with dynamic tests
+  #
+  # Assumes that we can get the username by parsing the filename.
+  # Pulls off _attemp, which direclty follows username
+  # Then, reverses, grabs the first _..., and reverses
   t_results <- tibble(results) %>%
-    mutate(id = str_split_i(id, '_',2),
+    mutate(id = stri_reverse(str_split_i(stri_reverse(str_split_i(id, '_attempt', 1)) , "_", 1)),
            comment = toText(select(results, -id)),
            points = rowSums(across(where(is.numeric)))
            ) %>%

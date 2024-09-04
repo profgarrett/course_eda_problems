@@ -32,7 +32,7 @@ q03_answer
 q04_answer
 
 # Q5
-# Use seq to create a sequence from 50-100, incrementing by 3
+# Use seq to create a sequence from 50-100, and increment by 3
 q05_answer
 
 
