@@ -138,4 +138,6 @@ if (F) {
   testthat::expect_equal(q06_answer, q06_solution)
   testthat::expect_equal(q07_answer, q07_solution)
   testthat::expect_equal(q08_answer, q08_solution)
+  testthat::expect_equal(q09_answer, q09_solution)
+  testthat::expect_equal(q10_answer, q10_solution)
 }
