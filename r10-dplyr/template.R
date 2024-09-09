@@ -126,29 +126,6 @@ library(testthat)
 
 
 
-# Q9
-#
-# Create a new tibble called q09_answer.
-# Base it off of q01_solution. Match the table below.
-#
-# is_id_over_2,   number_of_rows,    sum_of_sales
-# No                            2           35000
-# Yes                           2           91000
-
-
-
-
-# Q10
-#
-# Create a new tibble called q10_answer
-# Base it off of q01_solution. Match the table below.
-# Hint: use group_by and summarize.
-#
-# is_bob, sum_of_sales
-# FALSE, 116000
-# TRUE, 10000
-
-
 
 
 # -----------------------------------------------------------------------------------
@@ -165,6 +142,4 @@ if (F) {
   testthat::expect_equal(q06_answer, q06_solution)
   testthat::expect_equal(q07_answer, q07_solution)
   testthat::expect_equal(q08_answer, q08_solution)
-  testthat::expect_equal(q09_answer, q09_solution)
-  testthat::expect_equal(q10_answer, q10_solution)
 }
