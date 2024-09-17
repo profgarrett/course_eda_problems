@@ -42,4 +42,19 @@ test_that("q09", {
 test_that("q10", {
   testthat::expect_equal(q10_answer, q10_solution)
 })
+test_that("q11", {
+  testthat::expect_equal(q11_answer, q11_solution)
+})
+test_that("q12", {
+  testthat::expect_equal(q12_answer, q12_solution)
+})
+test_that("q13", {
+  testthat::expect_equal(q13_answer, q13_solution)
+})
+test_that("q14", {
+  testthat::expect_equal(q14_answer, q14_solution)
+})
+test_that("q15", {
+  testthat::expect_equal(q15_answer, q15_solution)
+})
 
