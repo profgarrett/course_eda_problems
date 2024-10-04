@@ -1,0 +1,32 @@
+---
+title: "Rmd r05 Publishing Rmd"
+author: "Nathan Garrett"
+date: "2024-10-04"
+output: html_document
+---
+
+Complete the following tasks:
+
+- Update the author and date information in the top of this file.
+- Add a 1st-level header with "Bio". Add text with a short 2-3 sentence personal biography
+- Add a 1st-level header titled "Career Goals".
+  - Add several 2nd-level headers, each with a potential career outcome.
+  - Under each, have bullet points with the expected salary, a potential employer, a pro to this career, and a con. Hint: be sure to add spaces and new-lines to help the Markdown render properly.
+- Add a code block that creates a tibble called t_bob that contains values 1-100. Have this display nothing when rendered
+- Add a code block that prints a graph of t_bob. Do not print any code or warnings.
+- Answer the questions below
+- Delete all of these instructions
+- Publish this online
+- Put the URL of the published file into this file. Add a new level 3 header titled "Online Link" with text containing a hyperlink.
+- Publish this again to update your online version
+- Submit this file with your code to eCampus
+
+
+# Questions
+
+Answer each of these questions:
+
+1. What file type has R code only?
+1. What file type has project settings?
+1. What file type has markdown and R code?
+1. What file type is created when rendering/knitting?

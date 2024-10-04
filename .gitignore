@@ -57,3 +57,6 @@ submissions
 rgradeblackboardgrader_processall.R
 *_solution.R
 *_solution.Rmd
+
+# Exclude rendered html files
+template.html

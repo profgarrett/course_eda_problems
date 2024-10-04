@@ -55,6 +55,12 @@ test_that("q14", {
   testthat::expect_equal(q14_answer, q14_solution)
 })
 test_that("q15", {
-  testthat::expect_equal(q15_answer, q15_solution)
+  # An earlier version had a typo causing the sum to +1
+  # Test w/o that
+  # testthat::expect_equal(q15_answer, q15_solution)
+  testthat::expect_equal(sum(q15_answer$mean), sum(q15_solution$mean))
+  testthat::expect_equal(nrow(q15_answer), nrow(q15_solution))
+  testthat::expect_equal((q15_answer$area), (q15_solution$area))
+
 })
 

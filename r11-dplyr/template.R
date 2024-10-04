@@ -1,4 +1,4 @@
-# Updated by NDG 9/17/24
+# Updated by NDG 9/24/24
 library(dplyr)
 library(testthat)
 library(this.path)
@@ -233,8 +233,8 @@ q14_answer
 # Sort by sum
 #
 # area      n  mean   sum
-# Sales     1    10    11
-# HR        2    25    51
+# Sales     1    10    10
+# HR        2    25    50
 #
 q15_answer
 
