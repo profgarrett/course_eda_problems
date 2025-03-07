@@ -59,6 +59,13 @@ my_grade
 paste(?, "expected grade is", ?)
 
 
+# Clear R Workspace
+#
+#   *important!*
+#   Setup rStudio according to the website.
+#   Learn how to restart / clear R workspace
+
+
 # Create variables for each exam for Bob.
 # Bob scored 80, 120, and 200 (out of 200)
 # He got a perfect score on the other homework
@@ -90,15 +97,22 @@ test_that('q_testthat', {
 })
 
 
-
-# More resources: -------------------
+# AI resources: -------------------
 #
-# Yarr is a gentle introduction to using R.
-#   If you haven't done any programming before, this could be
-#   a good way to get started.
-#   https://bookdown.org/ndphillips/YaRrr/jumpin.html
 #
-# W3 Schools has a nice reference for R code. This is really
-#   good for trying to lookup a specific feature.
-#   https://www.w3schools.com/r/default.asp
-
+# ChatGPT
+#   This is an amazing tool!
+#
+#   Use the chatbot to ask questions about R, or to get help
+#   https://www.dropbox.com/scl/fo/h73tioom26eapsgjaxvb1/AMZy3zYV31ips6Gm2YebMho?rlkey=wdy9171vrhsc52ngw1ql6unvs&dl=0
+#
+#   Ask good prompts:
+#     Add comments to each line, showing any errors.
+#     Explain how to do chisquared in r.
+#     Explain the meaning of the results for chisquared in r.
+#
+# Copilot
+#
+#     Amazing tool! Do not use! It makes it too easy to skip
+#     the learning process. *Decide* when you want to use AI,
+#     and use ChatGPT or another source.
